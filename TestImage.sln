@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestImage", "TestImage\TestImage.csproj", "{1214AD98-C60C-4AD7-B6B6-7CBEF99D55D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerificationTool", "VerificationTool\VerificationTool.csproj", "{64326976-397D-4E48-8165-E39C38E74F8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1214AD98-C60C-4AD7-B6B6-7CBEF99D55D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1214AD98-C60C-4AD7-B6B6-7CBEF99D55D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1214AD98-C60C-4AD7-B6B6-7CBEF99D55D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1214AD98-C60C-4AD7-B6B6-7CBEF99D55D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64326976-397D-4E48-8165-E39C38E74F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64326976-397D-4E48-8165-E39C38E74F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64326976-397D-4E48-8165-E39C38E74F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64326976-397D-4E48-8165-E39C38E74F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
