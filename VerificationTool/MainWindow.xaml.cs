@@ -79,5 +79,29 @@ namespace VerificationTool
         {
             this.button1.IsEnabled = false;
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            var value = context.Values.FirstOrDefault(f => f.HashText == this.textBox.Text.Trim());
+            context.Values.Remove(value);
+            context.SaveChanges();
+            Next();
+        }
+
+        private void press(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                button_Click(sender, e);
+            }
+            if (e.Key == Key.F12)
+            {
+                button1_Click(sender, e);
+            }
+            if (e.Key == Key.F1)
+            {
+                button2_Click(sender, e);
+            }
+        }
     }
 }

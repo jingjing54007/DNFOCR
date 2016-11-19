@@ -84,7 +84,16 @@ namespace TestImage
 
                 var name = SplitX(targetLocation);
 
-                ctx.DNFItems.Add(new DNFItem { ItemId = Guid.NewGuid(), Name = name.Trim(), PageIndex = string.Format("SS_{0}_{1}", Page, index) });
+                var pageIndex = string.Format("SS_{0}_{1}", Page, index);
+                var item = ctx.DNFItems.FirstOrDefault(f => f.PageIndex == pageIndex);
+                if (item == null)
+                {
+                    ctx.DNFItems.Add(new DNFItem { ItemId = Guid.NewGuid(), Name = name.Trim(), PageIndex = pageIndex });
+                }
+                else
+                {
+                    item.Name = name.Trim();
+                }
                 ctx.SaveChanges();
 
                 index++;
